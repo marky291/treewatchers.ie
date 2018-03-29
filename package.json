@@ -16,7 +16,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "laravel-mix": "^1.7.*"
+    "laravel-mix": "^1.7.*",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0"
   },
   "dependencies": {
     "cross-env": "^5.1.4"

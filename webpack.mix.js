@@ -1,11 +1,14 @@
 
-let mix = require('laravel-mix').setPublicPath('assets');
+let mix = require('laravel-mix');
+
+mix.setPublicPath('assets/');
+mix.setResourceRoot('/assets/');
 
 mix.options({
     // extractVueStyles: false, // Extract .vue component styling to file, rather than inline.
     // globalVueStyles: file, // Variables file to be imported in every component.
-    // processCssUrls: true, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
-    purifyCss: false, // Remove unused CSS selectors.
+    //processCssUrls: true, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
+    //purifyCss: true, // Remove unused CSS selectors.
     // uglify: {}, // Uglify-specific options. https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
     // postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 });
@@ -22,8 +25,8 @@ mix.options({
  */
 
 mix.
-    js('resources/app.js', 'assets/')
-    .sass('resources/app.scss', 'assets/');
+    js('resources/app.js', 'assets/app.js')
+    .sass('resources/app.scss', 'assets/app.css');
 
 // Full API
 // mix.js(src, output);

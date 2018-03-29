@@ -1,0 +1,39 @@
+.navigation {
+  flex: 3;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+  .nav-link.active {
+    color:white;
+    background-color: $header-hover-background;
+    background-image: url(/assets/images/overlay.png);
+  }
+  .nav-link.active:hover {
+    background-color: darken($header-hover-background, 5%);
+    color: $header-hover-text-color;
+    background-image: url(/assets/images/overlay.png);
+  }
+
+  li {
+    flex: 1;
+    transition: all 0.3s ease;
+    a {
+      flex: 1;
+      color: $header-text-color;
+      line-height: 80px;
+      display: block;
+      //margin: 0 10px;
+      text-decoration: none;
+
+      &:hover {
+        color: $header-hover-text-color;
+        background-color: $header-hover-background;
+        background-image: url(/assets/images/overlay.png);
+      }
+    }
+  }
+}

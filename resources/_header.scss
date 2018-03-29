@@ -1,0 +1,27 @@
+header {
+  background: url(images/overlay.png);
+  background-color: $header-background;
+  border-bottom: 1px solid $header-hover-background;
+
+  nav {
+    #site {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        flex:1;
+        color: $header-text-color;
+        margin-left: 12px;
+        font-size: 1.2em;
+      }
+      .logo {
+        height: 80px;
+        width: 80px;
+        background-image: url(images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

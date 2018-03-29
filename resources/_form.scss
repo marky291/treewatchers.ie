@@ -1,0 +1,36 @@
+
+form {
+  font-weight: bold;
+
+  input {
+    line-height: 1.6;
+    font-family: "Montserrat",sans-serif;
+  }
+
+  input, select, textarea {
+    //font-weight: bold;
+    line-height: 35px;
+    padding: 8px 20px;
+    border: 1px solid #bfbab1;
+    text-transform: capitalize;
+    font-size: 16px !important;
+  }
+
+  label {
+    margin-bottom: 8px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .row > .group {
+    flex: 1;
+  }
+
+  .group {
+    display: flex;
+    margin: 0 15px 30px;
+    flex-direction: column;
+  }
+}

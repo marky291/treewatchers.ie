@@ -1,0 +1,36 @@
+
+footer {
+
+  #contact-preview {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    border-bottom: 1px solid #dbd8d3;
+    background: url(/assets/images/overlay.png);
+    background-color: white;
+  }
+
+  #foot-nav, #foot-end {
+    display: flex;
+    > * {
+      flex: 1;
+    }
+  }
+
+  #foot-nav {
+    padding-top:45px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #dbd8d3;
+  }
+
+  #foot-end {
+    padding-top:25px;
+    padding-bottom: 25px;
+    background: url(/assets/images/overlay.png);
+    background-color: white;
+
+    .social {
+      justify-content: flex-end;
+    }
+  }
+}

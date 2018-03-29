@@ -1,0 +1,35 @@
+.segment {
+  padding-top: 125px;
+  padding-bottom: 125px;
+
+  .container {
+    > :first-child {
+      margin-right:35px;
+      justify-content: flex-start;
+    }
+    > :last-child {
+      margin-left: 35px;
+      justify-content: flex-end;
+    }
+  }
+
+  section {
+    h3 {
+      font-size: 2em;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1em;
+      font-weight: 300;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.segment.checkered:nth-child(odd) {
+  //background-color: #dbd8d3;
+}
+.segment.checkered:nth-child(even) {
+  //background-color: #707372;
+  background-color: $wireframe-blue;
+}

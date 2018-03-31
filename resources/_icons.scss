@@ -1,0 +1,37 @@
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    color: white;
+  }
+
+  .icon {
+    font-size: 2em;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.facebook a {
+      &:hover {
+        color: #3c5a99;
+      }
+    }
+
+    &.youtube a {
+      &:hover {
+        color: #d12121;
+      }
+    }
+
+    &.twitter a{
+      &:hover {
+        color: #28aae1;
+      }
+    }
+  }
+}
